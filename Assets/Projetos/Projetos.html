@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Miguel Abreu</title>
+    <link rel="icon" type="image/x-icon" href="../../Imagens/letter-l.png" />
     <link rel="stylesheet" href="Projetos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,47 +13,66 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="menu-icon" onclick="toggleMenu()">
-                <img id="menu-icon-img" src="../img/menu-icon.png" alt="Menu">
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <img id="menu-icon-img" src="../img/menu-icon.png" alt="Menu">
+                </div>
             </div>
-        </div>
-        <div class="content">
-            <!-- Conteúdo da página aqui -->
-        </div>
-    </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="/Assets/Projetos/Projetos.html">Projetos</a></li>
+                    <li><a href="https://lucasmiguelabreu.github.io/Curriculo/" target="_blank">Curriculo</a></li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h1>Contato</h1>
+            <p>Estou sempre em busca de novos desafios e oportunidades para crescer como desenvolvedor. Se você tem um
+                projeto em mente ou simplesmente quer conversar sobre tecnologia, sinta-se à vontade para me contatar!
+            </p>
 
-    <div class="menu">
-        <ul>
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="./Assets/Sobre/Sobre.html">Sobre</a></li>
-            <li><a href="./Assets/Projetos/Projetos.html">Projetos</a></li>
-            <li><a href="https://lucasmiguelabreu.github.io/Curriculo/" target="_blank">Curriculo</a></li>
-        </ul>
-    </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="/Imagens/linkedin.png"
+                        class="img-social" /></a>
+                <a href="https://github.com/yourprofile" target="_blank"><img src="/Imagens/github.png"
+                        class="img-social" /></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><img src="/Imagens/instagram.png"
+                        class="img-social" /></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><img src="/Imagens/whatsapp.png"
+                        class="img-social" /></a>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Lucas Miguel Abreu. Todos os direitos reservados.</p>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-        var menuIcon = document.querySelector('.menu-icon');
-        var menu = document.querySelector('.menu');
-        var menuIconImg = document.getElementById('menu-icon-img');
-        var menuOpen = false;
+            var menuIcon = document.querySelector('.menu-icon');
+            var menu = document.querySelector('.menu');
+            var menuIconImg = document.getElementById('menu-icon-img');
+            var menuOpen = false;
 
-        menuIcon.addEventListener('click', function () {
-            if (!menuOpen) {
-                menu.style.right = '0';
-                menuIconImg.src = '../img/close.png'; // Altere para o caminho da imagem de fechamento
-                menuIconImg.style.height = '25px';
-                menuOpen = true;
-            } else {
-                menu.style.right = '-300px';
-                menuIconImg.src = '../img/menu-icon.png'; // Altere para o caminho da imagem do menu
-                menuIconImg.style.height = '30px';
-                menuOpen = false;
-            }
+            menuIcon.addEventListener('click', function () {
+                if (!menuOpen) {
+                    menu.style.right = '0';
+                    menuIconImg.src = '../img/close.png'; // Altere para o caminho da imagem de fechamento
+                    menuIconImg.style.height = '25px';
+                    menuOpen = true;
+                } else {
+                    menu.style.right = '-300px';
+                    menuIconImg.src = '../img/menu-icon.png'; // Altere para o caminho da imagem do menu
+                    menuIconImg.style.height = '30px';
+                    menuOpen = false;
+                }
+            });
         });
-    });
     </script>
 </body>
 
