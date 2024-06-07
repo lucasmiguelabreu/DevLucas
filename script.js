@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     menuIcon.addEventListener('click', function() {
         if (!menuOpen) {
             menu.style.right = '0';
-            menuIconImg.src = 'Imagens/close.png'; // Altere para o caminho da imagem de fechamento
+            menuIconImg.src = 'assets/close.png'; // Altere para o caminho da imagem de fechamento
             menuIconImg.style.height = '25px';
             menuOpen = true;
         } else {
             menu.style.right = '-300px';
-            menuIconImg.src = 'Imagens/menu-icon.png'; // Altere para o caminho da imagem do menu
+            menuIconImg.src = 'assets/menu-icon.png'; // Altere para o caminho da imagem do menu
             menuIconImg.style.height = '30px';
             menuOpen = false;
         }
