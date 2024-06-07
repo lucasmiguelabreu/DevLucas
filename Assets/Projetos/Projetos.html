@@ -13,67 +13,36 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="header">
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <img id="menu-icon-img" src="../img/menu-icon.png" alt="Menu">
-                </div>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="/Assets/Projetos/Projetos.html">Projetos</a></li>
-                    <li><a href="https://lucasmiguelabreu.github.io/Curriculo/" target="_blank">Curriculo</a></li>
-                </ul>
-            </div>
-    </header>
     <main>
-        <section class="contact-info">
-            <h1>Contato</h1>
-            <p>Estou sempre em busca de novos desafios e oportunidades para crescer como desenvolvedor. Se você tem um
-                projeto em mente ou simplesmente quer conversar sobre tecnologia, sinta-se à vontade para me contatar!
-            </p>
-
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="/Imagens/linkedin.png"
-                        class="img-social" /></a>
-                <a href="https://github.com/yourprofile" target="_blank"><img src="/Imagens/github.png"
-                        class="img-social" /></a>
-                <a href="https://twitter.com/yourprofile" target="_blank"><img src="/Imagens/instagram.png"
-                        class="img-social" /></a>
-                <a href="https://twitter.com/yourprofile" target="_blank"><img src="/Imagens/whatsapp.png"
-                        class="img-social" /></a>
+        <section class="container">
+            <div class="carrossel">
+                <div class="item"><img src="../img/item1-1.png" alt=""></div>
+                <div class="item"><img src="../img/item1-2.png" alt=""></div>
+                <div class="item"><img src="../img/item1-3.png" alt=""></div>
+                <div class="item"><img src="../img/item1-5.png" alt=""></div>
+                <div class="item"><img src="../img/item1-6.png" alt=""></div>
+                <div class="item"><img src="../img/item1-7.png" alt=""></div>
+                <div class="item"><img src="../img/item1-8.png" alt=""></div>
+                <div class="item"><img src="../img/item1-9.png" alt=""></div>
+                <div class="item"><img src="../img/item1-10.png" alt=""></div>
             </div>
+
         </section>
 
     </main>
     <footer class="footer">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="/Imagens/linkedin.png"
+                class="img-social" /></a>
+        <a href="https://github.com/yourprofile" target="_blank"><img src="/Imagens/github.png"
+                class="img-social" /></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><img src="/Imagens/instagram.png"
+                class="img-social" /></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><img src="/Imagens/whatsapp.png"
+                class="img-social" /></a>
         <p>&copy; 2024 Lucas Miguel Abreu. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var menuIcon = document.querySelector('.menu-icon');
-            var menu = document.querySelector('.menu');
-            var menuIconImg = document.getElementById('menu-icon-img');
-            var menuOpen = false;
-
-            menuIcon.addEventListener('click', function () {
-                if (!menuOpen) {
-                    menu.style.right = '0';
-                    menuIconImg.src = '../img/close.png'; // Altere para o caminho da imagem de fechamento
-                    menuIconImg.style.height = '25px';
-                    menuOpen = true;
-                } else {
-                    menu.style.right = '-300px';
-                    menuIconImg.src = '../img/menu-icon.png'; // Altere para o caminho da imagem do menu
-                    menuIconImg.style.height = '30px';
-                    menuOpen = false;
-                }
-            });
-        });
-    </script>
+    <script></script>
 </body>
 
 </html>

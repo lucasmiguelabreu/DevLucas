@@ -7,111 +7,6 @@
     font-style: normal;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../Imagens/Background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 60px; /* Ajuste para evitar sobreposição com o header fixo */
-}
-
-.header {
-    background-color: #400072;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-.menu-icon {
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 999;
-}
-
-.menu-icon img {
-    height: 30px; /* Ajusta a altura da imagem */
-}
-
-.menu {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 200px;
-    height: 100%;
-    background-color: transparent;
-    padding: 20px;
-    transition: right 0.3s ease-in-out;
-    z-index: 998;
-    border: none;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu ul li {
-    padding: 10px 0;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #b96e48;
-    font-size: 18px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-.contact-info {
-    background: #400072;
-    padding: 2em;
-    margin: 1em;
-    border: none;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
-
-.contact-info h1 {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: #b96e48;
-}
-
-.contact-info p,
-.social-media {
-    margin: 0.5em 0;
-    color: #ffc340;
-}
-
-.contact-info a {
-    color: #b96e48;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
 
 .social-media a {
     margin-right: 1em;
@@ -125,9 +20,7 @@ main {
 .footer {
     text-align: center;
     padding: 1em 0;
-    background-color: transparent;
-    color: white;
-    position: fixed;
+    color: black;
     width: 100%;
     bottom: 0;
 }
@@ -141,22 +34,9 @@ main {
 }
 
 @media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .content .about-content {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    .content .about-image img {
-        max-width: 100%;
-    }
+    
 }
 
 @media (max-width: 600px) {
-    .menu {
-        width: 70%;
-        right: -100%;
-    }
+    
 }
